@@ -1,0 +1,10 @@
+@mixin f-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin op50 ($color: false) {
+    opacity: .5;
+    @if $color {background: $color;};
+}
