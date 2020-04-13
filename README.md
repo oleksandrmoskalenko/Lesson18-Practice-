@@ -6,9 +6,9 @@ Add Extension: **Live Sass Compiler** <br/>
 Add new setting: File -> Preferences -> Settings -> Live Sass Compiler <br/>
 *"liveSassCompile.settings.formats": [
     {
-        "format": "compressed",
-        "extensionName": ".min.css",
-        "savePath": "/css"
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "~/../css/"
     }
 ],
 "liveSassCompile.settings.autoprefix": [
