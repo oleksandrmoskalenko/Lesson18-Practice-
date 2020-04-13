@@ -82,9 +82,7 @@
 
         .button-arrow__icon {
             fill: currentColor;
-            animation-name: arrow-move;
-            animation-timing-function: ease-in-out;
-            animation-duration: 1.5s;
+            animation: arrow-move 1.5s ease-in-out;
         }
     }
 }
