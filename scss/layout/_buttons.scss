@@ -82,6 +82,19 @@
 
         .button-arrow__icon {
             fill: currentColor;
+            animation-name: arrow-move;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1.5s;
         }
+    }
+}
+
+@keyframes arrow-move {
+    50% {
+        transform: translateX(15px) rotateY(180deg);
+        @include size(8px,16px);
+    }
+    100% {
+        transform: translateX(0) rotateY(180deg);
     }
 }

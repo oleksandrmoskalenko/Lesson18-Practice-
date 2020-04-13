@@ -174,8 +174,21 @@ body {
 }
 .button-arrow:hover .button-arrow__icon {
   fill: currentColor;
+  animation-name: arrow-move;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
 }
 
+@keyframes arrow-move {
+  50% {
+    transform: translateX(15px) rotateY(180deg);
+    width: 8px;
+    height: 16px;
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
 .date {
   margin-bottom: 40px;
 }
@@ -263,6 +276,9 @@ body {
 }
 .social__item:last-child {
   margin-right: 0;
+}
+.social__item:hover {
+  color: #62a2ad;
 }
 .social__icon {
   color: currentColor;
